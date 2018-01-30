@@ -118,10 +118,13 @@ end
 
 
 def change_of_details(title, student, date)
+for book_name in library
+  if book_name[:title] == title
+    return title[:rental_details][:student_name].replace("Joel")
+    return title[:rental_details][:date].replace("08/10/2018")
+  end
+end
 
-title = @books[:title]
-student = @books[:rental_details][:student_name].replace("Joel")
-date = @books[:rental_details][:date].replace("08/10/2018")
 
 end
 
